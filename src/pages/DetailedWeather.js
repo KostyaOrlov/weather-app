@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { Redirect, Link } from "react-router-dom";
+
+import { MAIN } from "../constants/routes";
 import DetailedCityCard from "../components/DetailedCityCard/DetailedCityCard";
 
 class DetailedWeather extends Component {
@@ -15,7 +17,7 @@ class DetailedWeather extends Component {
   render() {
     return this.selectedCity ? (
       <div className="App">
-        <Link to="/" className="btn previous">
+        <Link to={MAIN} className="btn previous">
           Back
         </Link>
         <h3 className="main-title">{this.selectedCity.city.name}</h3>
@@ -26,7 +28,7 @@ class DetailedWeather extends Component {
         </div>
       </div>
     ) : (
-      <Redirect to="/" />
+      <Redirect to={MAIN} />
     );
   }
 }

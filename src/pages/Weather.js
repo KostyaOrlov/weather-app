@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 
-import { fetchCity } from "../redux/actions/citiesAction";
+import { fetchCity } from "../redux/actions/citiesActions";
 import CitiesList from "../components/CitiesList/CitiesList";
 import CityCard from "../components/CityCard/CityCard";
 

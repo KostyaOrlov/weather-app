@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
 
 import store from "./redux/store";
+import { MAIN, DETAILES } from "./constants/routes";
 import Weather from "./pages/Weather";
 import DetailedWeather from "./pages/DetailedWeather";
 import ErrorMsg from "./components/ErrorMsg/ErrorMsg";
@@ -15,8 +16,12 @@ class App extends Component {
         <BrowserRouter>
           <Fragment>
             <Switch>
-              <Route path="/" component={Weather} exact />
-              <Route path="/details/:id" component={DetailedWeather} exact />
+              <Route path={MAIN} component={Weather} exact />
+              <Route
+                path={`${DETAILES}:id`}
+                component={DetailedWeather}
+                exact
+              />
             </Switch>
             <ErrorMsg />
           </Fragment>

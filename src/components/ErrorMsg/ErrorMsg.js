@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import "./ErrorMsg.css";
 
-import { removeError } from "../../redux/actions/citiesAction";
+import { removeError } from "../../redux/actions/citiesActions";
 
 class ErrorMsg extends Component {
   componentWillUpdate(nextProps) {

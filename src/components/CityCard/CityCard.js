@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import { DETAILES } from "../../constants/routes";
 import "./CityCard.css";
 
 export default class CityCard extends Component {
@@ -28,7 +29,7 @@ export default class CityCard extends Component {
             </div>
           </div>
         </div>
-        <Link className="link-detailes" to={`/details/${city.id}`}>
+        <Link className="link-detailes" to={`${DETAILES}${city.id}`}>
           Details
         </Link>
       </div>
