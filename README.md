@@ -1,4 +1,4 @@
-##Main
+###Main
 Project was buils on ReactJS using Create-React-App, ReactRouter and Redux. 
 Forecast is made by fetchin data from (https://openweathermap.org/api).
 The user enters a city into input field and has a detailed, visualised forecast for next 3 hours.
