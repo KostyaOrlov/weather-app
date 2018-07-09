@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  background: #f6f6f6;
+}
+
+.app {
+  position: relative;
+}
+
+.main-title {
+  margin: 1rem auto;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.main-form {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.shadowed {
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.input {
+  outline: none;
+  padding: 0.5rem;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+}
+
+.input:focus {
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  padding: 0.5rem;
+  border: 1px solid lightgray;
+  color: #fff;
+  background: #6200ee;
+  font-size: 1rem;
+  border-radius: 3px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.previous {
+  display: block;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  margin: 0;
+  text-decoration: none;
+  background: white;
+  color: #000;
+  font-weight: 800;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90%;
+  margin: 2rem auto;
+}

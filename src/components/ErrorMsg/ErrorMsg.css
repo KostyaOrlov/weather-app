@@ -1,0 +1,14 @@
+.error-msg {
+  position: absolute;
+  padding: 1.5rem;
+  border: 1px solid grey;
+  border-radius: 3px;
+  border-bottom: 2px solid red;
+  top: 1.5rem;
+  right: -100%;
+  transition: all 0.3s;
+}
+
+.error-msg.active {
+  right: 0;
+}
